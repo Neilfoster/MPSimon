@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <title>MPSimon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <audio id="clip1">
+    <source src="audio/hat.mp3"></source>
+  </audio>
+    <audio id="clip2">
+    <source src="audio/kick.mp3"></source>
+  </audio>
+    <audio id="clip3">
+    <source src="audio/snare1.mp3"></source>
+  </audio>
+    <audio id="clip4">
+    <source src="audio/snare2.mp3"></source>
+  </audio>
+</head>
+
+<body>
+    <div id="outer-box">
+        <div id="top-row">
+            <div id="top-left"></div>
+            <div id="top-right"></div>
+        </div>
+        <div id="inner-box">
+            <div id="title" class="text-effect">MPSimon</div>
+            <div id="switches">
+                <input type="checkbox" class="toggle" id="on">
+                <button type="button" id="start">Start</button>
+                <input type="checkbox" class="toggle" id="strict">
+            </div>
+            <div class="text1">
+                <span>POWER</span>
+                <span>STRICT</span>
+            </div>
+            <div id="turn"></div>
+            <div class="text2">
+                COUNT
+            </div>
+        </div>
+        <div id="bottom-row">
+            <div id="bottom-left"></div>
+            <div id="bottom-right"></div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
