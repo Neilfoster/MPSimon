@@ -1,10 +1,12 @@
 body {
   color:white;
   font-family: 'Rubik', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
 }
 
 #outer-box {
-  border: 10px solid white ;
+  border: 10px solid #292929 ;
+  border-radius: 2%;
   height:530px;
   width:530px;
   margin: auto;
@@ -37,25 +39,25 @@ body {
   }
 
 #top-left {
-  border:5px solid white;
+  border:5px solid #292929;
   height:150px;
   width: 150px;
   background-color: grey;
 }
 #top-right {
-  border: 5px solid white;
+  border: 5px solid #292929;
   height:150px;
   width: 150px;
   background-color: grey;
 }
 #bottom-left {
-  border:5px solid white;
+  border:5px solid #292929;
   height:150px;
   width: 150px;
   background-color: grey;
 }
 #bottom-right {
-  border: 5px solid white;
+  border: 5px solid #292929;
   height:150px;
   width: 150px;
   background-color: grey;
