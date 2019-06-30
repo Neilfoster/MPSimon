@@ -4,6 +4,15 @@ body {
   line-height: 1.6;
   background-image: url("https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
 }
+.header{
+  margin:2% 20%;
+  background: rgba(0,0,0,0.7);
+}
+.head-title{
+  text-align:center;
+  font-size:2rem;
+  font-family: 'Rubik', sans-serif;
+}
 #outer-box {
   border: 10px solid #292929 ;
   border-radius: 2%;
@@ -97,8 +106,8 @@ body {
 /*Button*/
 .button {
   background-color: grey;
-  margin: 0 45%;
-  font-size: 1rem;
+  margin: 5% 45%;
+  font-size: 1.5rem;
   color: #fff;
   border-radius:5%;
   border:5px solid #292929;
@@ -122,11 +131,20 @@ body {
   background-color: #f4f4f4;
   margin: 20% auto;
   color:black;
-  width:70%;
+  width:60%;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),
               0 7px 20px 0 rgba(0,0,0,0.2);
   animation-name: modalopen;
   animation-duration: 1s;
+}
+.modal-header{
+  background:grey;
+  padding:15px;
+  color:#fff;
+  text-align: center;
+}
+.modal-body{
+  padding: 10px 20px;
 }
 .closeBtn{
   color: #fff;
@@ -138,13 +156,29 @@ body {
   text-decoration:none;
   cursor:pointer;
 }
-.modal-header{
-  background:grey;
-  padding:15px;
-  color:#fff;
+.rules {
+  font-family: 'Merriweather', serif;
+  font-size:1.2rem;
 }
-
 @keyframes modalopen{
   from{ opacity: 0}
   to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 768px) {
+  #outer-box {
+  border: 10px solid #292929 ;
+  border-radius: 2%;
+  height:800px;
+  width:500px;
+  margin: auto;
+  background-color: black
+}
+#inner-box{
+  padding:20% 0;
+}
+.header {
+  display:none;
+}
 }
