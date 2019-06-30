@@ -1,24 +1,24 @@
 //variables
-let order = [];
-let playerOrder = [];
-let flash;
-let turn;
-let good;
-let compTurn;
-let intervalID;
-let strict = false;
-let noise = true;
-let on = false;
-let win;
+let order = [] ;
+let playerOrder = [] ;
+let flash ;
+let turn ;
+let good ;
+let compTurn ;
+let intervalID ;
+let strict = false ;
+let noise = true ;
+let on = false ;
+let win ;
 
-const turnCounter = document.querySelector("#turn");
-const topLeft = document.querySelector("#top-left");
-const topRight = document.querySelector("#top-right");
-const bottomLeft = document.querySelector("#bottom-left");
-const bottomRight = document.querySelector("#bottom-right");
-const strictButton = document.querySelector("#strict");
-const onButton = document.querySelector("#on");
-const startButton = document.querySelector("#start")
+const turnCounter = document.getElementById("turn");
+const topLeft = document.getElementById("top-left");
+const topRight = document.getElementById("top-right");
+const bottomLeft = document.getElementById("bottom-left");
+const bottomRight = document.getElementById("bottom-right");
+const strictButton = document.getElementById("strict");
+const onButton = document.getElementById("on");
+const startButton = document.getElementById("start")
 
 strictButton.addEventListener('click', (event) => {
   if (strictButton.checked == true) {
@@ -231,4 +231,34 @@ function winGame() {
   turnCounter.innerHTML = "WIN!";
   on = false;
   win = true;
+}
+
+////Modal
+
+// Get Modal Element 
+let modal = document.getElementById("ruleModal");
+// Get open modal button 
+let modalBtn = document.getElementById("modalBtn");
+// get close button
+let closeBtn = document.getElementsByClassName("closeBtn")[0];
+
+//Listen for  open click
+modalBtn.addEventListener('click',openModal);
+//Listen for close click
+closeBtn.addEventListener('click',closeModal);
+//Listen for outside click
+window.addEventListener('click', clickOutside)
+// Function to open modal
+function openModal(){
+  modal.style.display = 'block' ;
+}
+// Function to close modal
+function closeModal(){
+  modal.style.display = 'none' ;
+}
+// Function to close modal if outside click
+function clickOutside(e){
+  if(e.target == modal){
+  modal.style.display = 'none' ; 
+  }
 }

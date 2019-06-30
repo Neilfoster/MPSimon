@@ -1,13 +1,14 @@
 body {
   color:white;
   font-family: 'Rubik', sans-serif;
+  line-height: 1.6;
   background-image: url("https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
 }
 #outer-box {
   border: 10px solid #292929 ;
   border-radius: 2%;
-  height:530px;
-  width:530px;
+  height:550px;
+  width:550px;
   margin: auto;
   background-color: black
 }
@@ -88,4 +89,62 @@ body {
 }
 .text2 {
   margin: auto;
+}
+.rules {
+  padding: 0px 20px;
+}
+
+/*Button*/
+.button {
+  background-color: grey;
+  margin: 0 45%;
+  font-size: 1rem;
+  color: #fff;
+  border-radius:5%;
+  border:5px solid #292929;
+  }
+.button:hover{
+  background:#333;
+}
+
+/*modal*/
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left:0;top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+.modal-content{
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  color:black;
+  width:70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),
+              0 7px 20px 0 rgba(0,0,0,0.2);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+.closeBtn{
+  color: #fff;
+  float:right;
+  font-size:30px;
+}
+.closeBtn:hover,.closeBtn:focus{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+.modal-header{
+  background:grey;
+  padding:15px;
+  color:#fff;
+}
+
+@keyframes modalopen{
+  from{ opacity: 0}
+  to {opacity: 1}
 }
