@@ -2,10 +2,15 @@ body {
   color:white;
   font-family: 'Rubik', sans-serif;
   line-height: 1.6;
-  background-image: url("https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  background-image: url("../images/image-1.jpg");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header{
   margin:2% 20%;
+  padding: 0 5% ;
+  border-radius: 10px;
   background: rgba(0,0,0,0.7);
 }
 .head-title{
@@ -105,11 +110,12 @@ body {
 
 /*Button*/
 .button {
-  background-color: grey;
-  margin: 5% 45%;
+  background-color: #e1e419;
+  margin: 5% 40%;
   font-size: 1.5rem;
-  color: #fff;
-  border-radius:5%;
+  padding:1%;
+  color: #000;
+  border-radius:10px;
   border:5px solid #292929;
   }
 .button:hover{
