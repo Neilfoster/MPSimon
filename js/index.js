@@ -19,7 +19,7 @@ const bottomRight = document.getElementById("bottom-right");
 const strictButton = document.getElementById("strict");
 const onButton = document.getElementById("on");
 const startButton = document.getElementById("start")
-
+// Strick mode setting
 strictButton.addEventListener('click', (event) => {
   if (strictButton.checked == true) {
     strict = true;
@@ -27,7 +27,7 @@ strictButton.addEventListener('click', (event) => {
     strict = false;
   }
 });
-
+// Counter
 onButton.addEventListener('click', (event) => {
   if (onButton.checked == true) {
     on = true;
@@ -39,13 +39,13 @@ onButton.addEventListener('click', (event) => {
     clearInterval(intervalId);
   }
 });
-
+//Start Button
 startButton.addEventListener('click', (event) => {
   if (on || win) {
     play();
   }
 });
-
+// Gameplay function
 function play() {
   win = false;
   order = [];
@@ -59,7 +59,6 @@ function play() {
     order.push(Math.floor(Math.random() * 4) + 1);
   }
   compTurn = true;
-
   intervalId = setInterval(gameTurn, 800);
 }
 
