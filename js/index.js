@@ -18,7 +18,7 @@ const bottomLeft = document.getElementById("bottom-left");
 const bottomRight = document.getElementById("bottom-right");
 const strictButton = document.getElementById("strict");
 const onButton = document.getElementById("on");
-const startButton = document.getElementById("start")
+const startButton = document.getElementById("start");
 // Strick mode setting
 strictButton.addEventListener('click', (event) => {
   if (strictButton.checked == true) {
@@ -132,7 +132,7 @@ function flashColor() {
   bottomRight.style.backgroundColor = "#9da76b";
   bottomLeft.style.backgroundColor = "#6c6ba7";
 }
-
+//Clear flash on pads
 topLeft.addEventListener('click', (event) => {
   if (on) {
     playerOrder.push(1);
@@ -184,7 +184,7 @@ bottomRight.addEventListener('click', (event) => {
     }
   }
 })
-
+// Function to check if order correct
 function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     good = false;
@@ -199,7 +199,7 @@ function check() {
     setTimeout(() => {
       turnCounter.innerHTML = turn;
       clearColor();
-
+// Strict mode
       if (strict) {
         play();
       } else {
@@ -224,7 +224,7 @@ function check() {
   }
 
 }
-
+// Function for winning game
 function winGame() {
   flashColor();
   turnCounter.innerHTML = "WIN!";

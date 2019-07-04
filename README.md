@@ -36,6 +36,29 @@ really test my my memory, strict mode was exactly what i was looking for
 * How to play button- brings up a modal explaing all the instuctions and rules
  to the game. 
  
+
 ## Technologies Used
 This game was made using HTML, CSS and Javascript.
 *Google Fonts: This project uses Google fonts 'Rubik' and 'Merriweather' for body text  [Google fonts](https://fonts.google.com/).
+
+## Testing
+I carried out some manual tests for the follwing:
+* Wrong pad selected - I turned on the power switch which showed a - symbol on the 
+  counter. I then pressed the start button, MPSimon produced a sound and a flash of light
+  for me to repeat, I repeated the sound correctly. MPSimon then gave me a sequence of 2
+  drum sounds and flashing lights which I deliberately pressed the wrong drum pad.
+  the counter then showed the text "no!" and then repeated the 2 step sequence back to me 
+  which is what it was ment to do, so my testing of pressing the wrong pad was successful.
+
+* Strict mode - I turned the power button on , then selected strict mode , then I pressed
+  start to start the game. MPSimon again produced a sound and a flash of light for me which
+  I repeated sucsessfully, this pattern repeated until I reached a sequence of six drum
+  sounds together.I then deliberately pressed the wrong pad. Again the counter showed
+  the text of "NO!" and MPSimon then reset itself and gave me one drum sound to repeat
+  which is what I intended to happen. Again testing was successful.
+
+* Win Mode - As 20 drum sounds in a row is quite difficult to achieve I went into
+  the code and manually changed the test function so that if I produced 5 successful
+  sequences in a row that matched I would wim the game. I turned the power switch on,
+  pressed start and repeated the sequences until I repeated 5 successfully. The counter then
+  displayed the text of win and the game then stopped. Again the test was sucsessful.
