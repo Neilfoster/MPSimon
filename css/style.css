@@ -10,7 +10,7 @@ body {
 }
 .header{
   margin:2% 20%;
-  padding: 0 5% ;
+  padding: 0 5% 1% 5% ;
   border-radius: 10px;
   background: rgba(0,0,0,0.7);
 }
@@ -147,7 +147,7 @@ body {
   animation-duration: 1s;
 }
 .modal-header{
-  background:grey;
+  background:#37373c;
   padding:15px;
   color:#fff;
   text-align: center;
@@ -170,6 +170,7 @@ body {
   font-size:1.2rem;
   display: block;
 }
+
 @keyframes modalopen{
   from{ opacity: 0}
   to {opacity: 1}
@@ -178,10 +179,10 @@ body {
 
 @media only screen and (max-width: 768px) {
   #outer-box {
-  border: 10px solid #292929 ;
+  border: 5px solid #292929 ;
   border-radius: 2%;
   height:800px;
-  width:500px;
+  width:450px;
   margin: auto;
   background-color: black
 }
@@ -190,5 +191,9 @@ body {
 }
 .header {
   display:none;
+}
+.button {
+  display: flex;
+  justify-content:center;
 }
 }
