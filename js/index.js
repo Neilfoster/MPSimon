@@ -19,6 +19,7 @@ const bottomRight = document.getElementById("bottom-right");
 const strictButton = document.getElementById("strict");
 const onButton = document.getElementById("on");
 const startButton = document.getElementById("start");
+
 // Strick mode setting
 strictButton.addEventListener('click', (event) => {
   if (strictButton.checked == true) {
@@ -27,6 +28,7 @@ strictButton.addEventListener('click', (event) => {
     strict = false;
   }
 });
+
 // Counter
 onButton.addEventListener('click', (event) => {
   if (onButton.checked == true) {
@@ -39,12 +41,14 @@ onButton.addEventListener('click', (event) => {
     clearInterval(intervalId);
   }
 });
+
 //Start Button
 startButton.addEventListener('click', (event) => {
   if (on || win) {
     play();
   }
 });
+
 // Gameplay function
 function play() {
   win = false;
@@ -83,6 +87,7 @@ function gameTurn() {
     }, 200);
   }
 }
+
 //pads
 function one (){
   if (noise) {
@@ -132,6 +137,7 @@ function flashColor() {
   bottomRight.style.backgroundColor = "#9da76b";
   bottomLeft.style.backgroundColor = "#6c6ba7";
 }
+
 //Clear flash on pads
 topLeft.addEventListener('click', (event) => {
   if (on) {
@@ -184,6 +190,7 @@ bottomRight.addEventListener('click', (event) => {
     }
   }
 })
+
 // Function to check if order correct
 function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
@@ -199,6 +206,7 @@ function check() {
     setTimeout(() => {
       turnCounter.innerHTML = turn;
       clearColor();
+
 // Strict mode
       if (strict) {
         play();
@@ -224,6 +232,7 @@ function check() {
   }
 
 }
+
 // Function for winning game
 function winGame() {
   flashColor();
@@ -236,28 +245,26 @@ function winGame() {
 
 // Get Modal Element 
 let modal = document.getElementById("ruleModal");
+
 // Get open modal button 
 let modalBtn = document.getElementById("modalBtn");
+
 // get close button
 let closeBtn = document.getElementsByClassName("closeBtn")[0];
 
 //Listen for  open click
-modalBtn.addEventListener('click',openModal);
+modalBtn.addEventListener('click',function(){
+   modal.style.display = "block"
+});
 //Listen for close click
-closeBtn.addEventListener('click',closeModal);
+closeBtn.addEventListener('click',function(){
+  modal.style.display = "none"
+});
 //Listen for outside click
-window.addEventListener('click', clickOutside)
-// Function to open modal
-function openModal(){
-  modal.style.display = 'block' ;
-}
-// Function to close modal
-function closeModal(){
-  modal.style.display = 'none' ;
-}
-// Function to close modal if outside click
-function clickOutside(e){
-  if(e.target == modal){
-  modal.style.display = 'none' ; 
-  }
-}
+window.addEventListener('click', function(){
+   if(e.target == modal){
+  modal.style.display = 'none'
+   }
+ });
+
+
