@@ -8,17 +8,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .header{
   margin:2% 20%;
   padding: 0 5% 1% 5% ;
   border-radius: 10px;
   background: rgba(0,0,0,0.7);
 }
+
 .head-title{
   text-align:center;
   font-size:2rem;
   font-family: 'Rubik', sans-serif;
 }
+
 #outer-box {
   border: 10px solid #292929 ;
   border-radius: 2%;
@@ -27,52 +30,61 @@ body {
   margin: auto;
   background-color: black
 }
+
 #top-row{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top:20px;
 }
+
 #bottom-row{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top:20px;
 }
+
 #inner-box{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 #switches{
   display: flex;
   flex-direction: row;
   justify-content: center;
   }
+  
 #top-left {
   border:5px solid #292929;
   height:150px;
   width: 150px;
   background-color: grey;
 }
+
 #top-right {
   border: 5px solid #292929;
   height:150px;
   width: 150px;
   background-color: grey;
 }
+
 #bottom-left {
   border:5px solid #292929;
   height:150px;
   width: 150px;
   background-color: grey;
 }
+
 #bottom-right {
   border: 5px solid #292929;
   height:150px;
   width: 150px;
   background-color: grey;
 }
+
 #title {
   display: flex;
   flex-direction: row;
@@ -80,6 +92,7 @@ body {
   font-size: 2rem;
   padding: 10px 5px;
 }
+
 #turn {
   background: #330000;
   color: red;
@@ -92,9 +105,11 @@ body {
   line-height: 30px;
   margin: auto;
 }
+
 .toggle {
   margin: auto;
 }
+
 .text1 {
   margin: 0;
   display: flex;
@@ -102,9 +117,11 @@ body {
   justify-content: space-around;
   align-items: baseline;
 }
+
 .text2 {
   margin: auto;
 }
+
 .rules {
   padding: 0px 20px;
 }
@@ -121,6 +138,7 @@ body {
   text-align: center;
   border:5px solid #292929;
   }
+  
 .button:hover{
   background:#333;
 }
@@ -136,6 +154,7 @@ body {
   overflow: auto;
   background-color: rgba(0,0,0,0.7);
 }
+
 .modal-content{
   background-color: #f4f4f4;
   margin: 20% auto;
@@ -146,25 +165,30 @@ body {
   animation-name: modalopen;
   animation-duration: 1s;
 }
+
 .modal-header{
   background:#37373c;
   padding:15px;
   color:#fff;
   text-align: center;
 }
+
 .modal-body{
   padding: 10px 20px;
 }
+
 .closeBtn{
   color: #fff;
   float:right;
   font-size:30px;
 }
+
 .closeBtn:hover,.closeBtn:focus{
   color:#000;
   text-decoration:none;
   cursor:pointer;
 }
+
 .rules {
   font-family: 'Merriweather', serif;
   font-size:1.2rem;
@@ -186,12 +210,15 @@ body {
   margin: auto;
   background-color: black
 }
+
 #inner-box{
   padding:20% 0;
 }
+
 .header {
   display:none;
 }
+
 .button {
   display: flex;
   justify-content:center;
