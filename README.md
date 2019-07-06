@@ -38,27 +38,44 @@ really test my my memory, strict mode was exactly what i was looking for
  
 
 ## Technologies Used
-This game was made using HTML, CSS and Javascript.
-*Google Fonts: This project uses Google fonts 'Rubik' and 'Merriweather' for body text  [Google fonts](https://fonts.google.com/).
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) 
+   * Used to contruct basic file structure 
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
+   * Provides the styling for the page and all content 
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+ * Used for the interactivity of the page and the logic behind the game
+* [Google Fonts](https://fonts.google.com/)
+* This project uses Google fonts 'Rubik' and 'Merriweather' for body text  
 
 ## Testing
-I carried out some manual tests for the follwing:
-* Wrong pad selected - I turned on the power switch which showed a - symbol on the 
-  counter. I then pressed the start button, MPSimon produced a sound and a flash of light
-  for me to repeat, I repeated the sound correctly. MPSimon then gave me a sequence of 2
-  drum sounds and flashing lights which I deliberately pressed the wrong drum pad.
-  the counter then showed the text "no!" and then repeated the 2 step sequence back to me 
-  which is what it was ment to do, so my testing of pressing the wrong pad was successful.
+I tested the game to make sure it rendered as expected in all major web browsers
+* Making sure the game is responsive and that all content in legible.
+* Site was tested using the mobile and desktop versions of
+   *Chrome
+   *Firefox
+   *Oprea
+   *MS Edge
+   *Safari
 
-* Strict mode - I turned the power button on , then selected strict mode , then I pressed
-  start to start the game. MPSimon again produced a sound and a flash of light for me which
-  I repeated sucsessfully, this pattern repeated until I reached a sequence of six drum
-  sounds together.I then deliberately pressed the wrong pad. Again the counter showed
-  the text of "NO!" and MPSimon then reset itself and gave me one drum sound to repeat
-  which is what I intended to happen. Again testing was successful.
+### Testing Matrix
+A test matrix was carried out to make sure all elements of the game redered 
+consistently across all different devices and browsers and that all fuctionality
+performed as expected. You can find a copy of the test matrix [here](https://github.com/Neilfoster/MPSimon/blob/master/docs/MPSimon-testMatrix.xls)
 
-* Win Mode - As 20 drum sounds in a row is quite difficult to achieve I went into
-  the code and manually changed the test function so that if I produced 5 successful
-  sequences in a row that matched I would wim the game. I turned the power switch on,
-  pressed start and repeated the sequences until I repeated 5 successfully. The counter then
-  displayed the text of win and the game then stopped. Again the test was sucsessful.
+## Deployment
+Deployment and source control was carried out via [Github](https://github.com/)
+The deployed redered the same as the development version
+
+## Content
+All Drum Samples were taken from [freesound.org](https://freesound.org/)
+
+
+
+## Acknowledgements
+This project was influced by two iconic 80s pieces of technology:
+
+* The legandary 80s toy "Simon", you can read
+all about this game [here](https://en.wikipedia.org/wiki/Simon_(game))
+
+* The Iconic 1980s drum machine the Akai MPC, you can find out more about this 
+ product [here](https://en.wikipedia.org/wiki/Akai_MPC)
