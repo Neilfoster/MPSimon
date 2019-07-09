@@ -51,13 +51,7 @@ really test my my memory, strict mode was exactly what i was looking for.
 ## Testing
 I tested the game to make sure it rendered as expected in all major web browsers
 * Making sure the game is responsive and that all content in legible.
-* Site was tested using the mobile and desktop versions of:
-    
-    *Chrome
-    *Firefox
-    *Oprea
-    *MS Edge
-    *Safari
+* Site was tested using the mobile and desktop versions of Chrome,Firefox,Oprea,MS Edge and Safari
 
 ### Testing Matrix
 A test matrix was carried out to make sure all elements of the game redered 
