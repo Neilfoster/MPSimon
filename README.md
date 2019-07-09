@@ -12,11 +12,12 @@ successfully match a sequence of 20 drum samples the game is won
 ## UX
 The project was designed to replicate the look of the MPC drum machine. I added 
 a different color to each pad everytime it is hit to give the user a visual
-refernce aswell as an aural reference. 
+refernce aswell as an aural reference. This game is aimed at all ages and abilities.
 > As an avid memory game fan I wanted to play a game that both challenged my
-memory and give me a fun way to do it
+memory and give me a fun way to do it.
+
 > As an experienced drum machine user I wanted a challenging game that could 
-really test my my memory, strict mode was exactly what i was looking for
+really test my my memory, strict mode was exactly what i was looking for.
 
 ## Features 
 * Power Button - allows users to toggle on/off the power on the machine. When 
@@ -50,12 +51,13 @@ really test my my memory, strict mode was exactly what i was looking for
 ## Testing
 I tested the game to make sure it rendered as expected in all major web browsers
 * Making sure the game is responsive and that all content in legible.
-* Site was tested using the mobile and desktop versions of
-   *Chrome
-   *Firefox
-   *Oprea
-   *MS Edge
-   *Safari
+* Site was tested using the mobile and desktop versions of:
+    
+    *Chrome
+    *Firefox
+    *Oprea
+    *MS Edge
+    *Safari
 
 ### Testing Matrix
 A test matrix was carried out to make sure all elements of the game redered 
@@ -68,7 +70,8 @@ The deployed redered the same as the development version
 
 ## Content
 All Drum Samples were taken from [freesound.org](https://freesound.org/)
-
+The design of the drum Machine was based on an MPD drum machine which is a usb
+version of the classic MPC
 
 
 ## Acknowledgements
