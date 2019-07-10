@@ -207,7 +207,6 @@ function check() {
       turnCounter.innerHTML = turn;
       clearColor();
 
-// Strict mode
       if (strict) {
         play();
       } else {
