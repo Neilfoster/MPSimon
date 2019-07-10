@@ -61,7 +61,7 @@ performed as expected. You can find a copy of the test matrix [here](https://git
 ## Deployment
 Deployment and source control was carried out via [Githubpages](https://pages.github.com/https://pages.github.com/)
 The deployed redered the same as the development version. I pushed the master branch so
-that it updates live. the deplyed version can be found [here] (https://neilfoster.github.io/MPSimon/)
+that it updates live. the deplyed version can be found [here](https://neilfoster.github.io/MPSimon/)
 
 ## Content
 All Drum Samples were taken from [freesound.org](https://freesound.org/)
