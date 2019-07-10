@@ -59,8 +59,9 @@ consistently across all different devices and browsers and that all fuctionality
 performed as expected. You can find a copy of the test matrix [here](https://github.com/Neilfoster/MPSimon/blob/master/docs/MPSimon-testMatrix.xls)
 
 ## Deployment
-Deployment and source control was carried out via [Github](https://github.com/)
-The deployed redered the same as the development version
+Deployment and source control was carried out via [Githubpages](https://pages.github.com/https://pages.github.com/)
+The deployed redered the same as the development version. I pushed the master branch so
+that it updates live. the deplyed version can be found [here] (https://neilfoster.github.io/MPSimon/)
 
 ## Content
 All Drum Samples were taken from [freesound.org](https://freesound.org/)
